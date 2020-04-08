@@ -7,20 +7,22 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="" alt="Tesla">
+        <a class="header__logo" href="#"><img src="" alt="Tesla"></a>
         <div class="header__inner">
-            <nav class="header__nav">
+            <nav class="nav">
                 <a class="nav__link" href="#">Model S</a>
                 <a class="nav__link" href="#">Model X</a>
                 <a class="nav__link" href="#">Model 3</a>
                 <a class="nav__link" href="#">Roadster</a>
                 <a class="nav__link" href="#">Energy</a>
-                <div class="header__login">
-                    <a class="nav__link" href="">Магазин</a>
-                    <a class="nav__link" href="">Войти</a>
-                    <i class="nav-toggle"></i>
-                </div>
             </nav>
+            <div class="header__login">
+                <a class="nav__link" href="">Магазин</a>
+                <a class="nav__link" href="">Войти</a>
+                <button class="header__burger">
+                    <img src="" alt="burger">
+                </button>
+            </div>
         </div>
     </header>
 
@@ -28,83 +30,88 @@
         <h1 class="model__title">Model S</h1>
         <p class="model__subtitle">Добро пожаловать в будущее!</p>
         <img class="model__img" src="" alt="Tesla">
-        <div class="model__info">
-            <div>
-                <h2 class="model__info-title">2,7 <span>сек</span></h2>
-                <span class="model__info-subtitle">0-100 км/час</span>
+        <div class="inner__info">
+            <div class="inner__info-speed">
+                <div class="inner__info-title"><span>2,7</span> сек</div>
+                <div class="inner__info-subtitle">0-100 км/час</div>
             </div>
-            <div>
-                <h2 class="model__info-title">632 <span>км</span></h2>
-                <span class="model__info-subtitle">Запас хода</span>
+            <div class="inner__info-stock">
+                <div class="inner__info-title"><span>632</span> км</div>
+                <div class="inner__info-subtitle">Запас хода</div>
             </div>
-            <div>
-                <p class="model__info-test">Тест драйв</p>
-            </div>
-            <div>
-                <button class="model__info-btn" type="button">Заказать</button>
-            </div>
+            <div class="inner__info-test">Тест драйв</div>
+            <button class="tesla-btn model__info-btn" type="button">Заказать</button>
         </div>
+        <img class="model__arrow" src="" alt="arrow">
     </section>
 
     <main class="content">
         <section class="top">
-            <h1 class="top-title">Model S</h1>
-            <aside class="top__inner_block">
-                <h2 class="content__title">Будущее вождения</h2>
+            <h2 class="top-title">Model S</h2>
+            <aside class="inner__content">
+                <h3 class="content__title">Будущее вождения</h3>
                 <p class="content__description">
                     Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых 
                     и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая 
                     инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша 
                     обеспечивает просторный интерьер для каждого пассажира.
                 </p>
-                <div class="top__inner_info">
-                    <div>
-                        <h3 class="top__inner_info-title"><span>17</span> дюймов</h3>
-                        <span class="top__inner_info-description">Большой дисплей</span>
+                <div class="inner__info">
+                    <div class="inner__info-display">
+                        <div class="inner__info-title"><span>17</span> дюймов</div>
+                        <div class="inner__info-subtitle">Большой дисплей</div>
                     </div>
-                    <div>
-                        <h3 class="top__inner_info-title">Беспроводное обновление ПО</h3>
-                        <span class="top__inner_info-description">Повышенная функциональность</span>
+                    <div class="inner__info-software">
+                        <div class="inner__info-title">Беспроводное обновление ПО</div>
+                        <div class="inner__info-subtitle">Повышенная функциональность</div>
                     </div>
-                    <div>
-                        <h3 class="top__inner_info-title"><span>894</span> литра</h3>
-                        <span class="top__inner_info-description">Объем грузового пространства</span>
+                    <div class="inner__info-capacity">
+                        <div class="inner__info-title"><span>894</span> литра</div>
+                        <div class="inner__info-subtitle">Объем грузового пространства</div>
                     </div>
                 </div>
                 <div class="content__form">
-                    <p class="form__description">Узнать больше</p>
-                    <button class="form__btn" type="button">Заказать</button>
-                </div> 
+                    <button class="form__description">Узнать больше</button>
+                    <button class="tesla-btn form__btn" type="button">Заказать</button>
+                </div>
             </aside>
         </section>
 
         <section class="bottom">
-            <aside class="bottom__inner_block">
-                <div>
-                    <h3 class="content__title">Самый безопасный автомобиль в мире</h3>
-                    <p class="content__description">
-                        Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, 
-                        и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на 
-                        переднем, боковом, заднем сидении и в ДТП с переворотом авто.
-                    </p>
-                </div>
-                <div class="bottom__inner_info">
+            <aside class="inner__content">
+                <h3 class="content__title">Самый безопасный автомобиль в мире</h3>
+                <p class="content__description">
+                    Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, 
+                    и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на 
+                    переднем, боковом, заднем сидении и в ДТП с переворотом авто.
+                </p>
+                <div class="bottom__inner-info">
                     <h3 class="content__title">Оценка защиты:</h3>
-                    <ul class="menu__list">
-                        <li class="list__item">Спереди</li>
-                        <li class="list__item">Сбоку</li>
-                        <li class="list__item">Сбоку <span>(стойка)</span></li>
-                        <li class="list__item">Водитель</li>
-                        <li class="list__item">Пассажир</li>
+                    <ul class="star">
+                        <li class="star__item">Спереди
+                            <img src="" alt="star">
+                        </li>
+                        <li class="star__item">Сбоку
+                            <img src="" alt="star">
+                        </li>
+                        <li class="star__item">Сбоку <span>(стойка)</span>
+                            <img src="" alt="star">
+                        </li>
+                        <li class="star__item">Водитель
+                            <img src="" alt="star">
+                        </li>
+                        <li class="star__item">Пассажир
+                            <img src="" alt="star">
+                        </li>
                     </ul>
                 </div>
                 <div class="bottom__inner-quality">
-                    <h2 class="quality__title">5 звезд</h2>
-                    <span class="quality__subtitle">безопасности</span>
+                    <h3 class="quality__title">5 звезд</h3>
+                    <div class="quality__subtitle">безопасности</div>
                 </div>
                 <div class="content__form">
-                    <p class="form__description">Узнать больше</p>
-                    <button class="form__btn" type="button">Заказать</button>
+                    <button class="form__description">Узнать больше</button>
+                    <button class="tesla-btn form__btn" type="button">Заказать</button>
                 </div> 
             </aside>
         </section>
