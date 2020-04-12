@@ -8,20 +8,22 @@
 </head>
 <body>
     <header class="header">
-        <a class="header__logo" href="#"><img src="" alt="Tesla"></a>
-        <div class="header__inner">
+        <div class="container header__inner">
+            <a class="header__logo" href="#">
+                <img src="./img/header-logo.png" alt="Tesla">
+            </a>
             <nav class="nav">
-                <a class="nav__link" href="#">Model S</a>
+                <a class="nav__link nav__link_active" href="#">Model S</a>
                 <a class="nav__link" href="#">Model X</a>
                 <a class="nav__link" href="#">Model 3</a>
                 <a class="nav__link" href="#">Roadster</a>
                 <a class="nav__link" href="#">Energy</a>
             </nav>
             <div class="header__login">
-                <a class="nav__link" href="">Магазин</a>
-                <a class="nav__link" href="">Войти</a>
+                <a class="nav__link login__link" href="">Магазин</a>
+                <a class="nav__link login__link" href="">Войти</a>
                 <button class="header__burger">
-                    <img class="burger-btn" src="" alt="burger">
+                    <img class="burger-btn" src="./img/header-burger.png" alt="burger">
                 </button>
             </div>
         </div>
@@ -30,20 +32,24 @@
     <section class="model">
         <h1 class="model__title">Model S</h1>
         <p class="model__subtitle">Добро пожаловать в будущее!</p>
-        <img class="model__img" src="" alt="Tesla">
+        <img class="model__img" src="./img/header-tesla.png" alt="Tesla">
         <div class="inner__info">
-            <div class="inner__info-speed">
-                <div class="inner__info-title"><span>2,7</span> сек</div>
-                <div class="inner__info-subtitle">0-100 км/час</div>
+            <div class="info__block-speed">
+                <div class="inner__info-speed">
+                    <div class="inner__info-title"><span>2,7</span> сек</div>
+                    <div class="inner__info-subtitle">0-100 км/час</div>
+                </div>
+                <div class="inner__info-stock">
+                    <div class="inner__info-title"><span>632</span> км</div>
+                    <div class="inner__info-subtitle">Запас хода</div>
+                </div>
             </div>
-            <div class="inner__info-stock">
-                <div class="inner__info-title"><span>632</span> км</div>
-                <div class="inner__info-subtitle">Запас хода</div>
+            <div class="info__block-test">
+                <div class="inner__info-test">Тест драйв</div>
+                <button class="tesla-btn model__info-btn" type="button">Заказать</button>
             </div>
-            <div class="inner__info-test">Тест драйв</div>
-            <button class="tesla-btn model__info-btn" type="button">Заказать</button>
         </div>
-        <img class="model__arrow" src="" alt="arrow">
+        <img class="model__arrow" src="./img/model-arrow.png" alt="arrow">
     </section>
 
     <main class="content">
