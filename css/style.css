@@ -115,7 +115,9 @@ body {
     background-image: url(../img/header-tesla-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center 60px;
+    background-position: center 55px;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .model__title {
@@ -128,12 +130,14 @@ body {
 .model__subtitle {
     font-weight: 500;
     margin: 0;
+    margin-bottom: 25px;
 }
 
 .model__img {
-    width: 968px;
+    max-width: 62%;
+    height: auto;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .inner__info {
@@ -253,4 +257,222 @@ body {
 .model__arrow {
     cursor: pointer;
     display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 1230px) {
+
+    .container {
+        max-width: 1230px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .login__link {
+        display: none;
+    }
+    .model {
+        background-position: center 70px;
+    }
+    
+}
+
+@media (max-width: 980px) {
+    
+    .nav {
+        display: none;
+    }
+    .burger-btn {
+        width: 35px;
+        height: 22px;
+    }
+    .model {
+        background-position: center 80px;
+    }
+
+}
+
+@media (max-width: 880px) {
+    
+    .inner__info {
+        display: flex;
+        flex-direction: column;
+    }
+    .info__block-speed {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 780px) {
+    
+    .model__subtitle {
+        margin-bottom: 50px;
+    }
+    .model {
+        background-position: center 100px;
+    }
+    .inner__info-stock::before {
+        background-image: url(../img/stock-2.png);
+        width: 35px;
+        height: 55px;
+    }
+    .inner__info-test {
+        font-size: 16px;
+        color: #E51937;
+        line-height: 20px;
+        font-weight: bold;
+    }
+    .inner__info-test::before {
+        background-image: url(../img/test-2.png);
+        width: 30px;
+        height: 30px;
+        left: -45px;
+    }
+    .tesla-btn {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        background-color: #E51937;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .header__inner {
+        padding: 0;
+    }
+    .model {
+        background-position: center 130px;
+    }
+    .model__subtitle {
+        margin-bottom: 70px;
+    }
+    .model__title {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .header__burger {
+        padding-top: 0;
+    }
+    .model__title {
+        font-size: 70px;
+    }
+    .model__img {
+        margin-bottom: 20px;
+    }
+    .info__block-speed {
+        margin-bottom: 35px;
+    }
+    .inner__info-speed::before {
+        width: 40px;
+        height: 30px;
+    }
+    .inner__info-stock::before {
+        width: 30px;
+        height: 50px;
+    }
+    .inner__info-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .inner__info-title span {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .model__info-btn {
+        margin-left: 45px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    
+    .model__title {
+        font-size: 50px;
+        line-height: 61px;
+    }
+    .model__subtitle {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .info__block-speed {
+        width: 280px;
+    }
+    .inner__info-speed::before {
+        width: 38px;
+        height: 28px;
+        left: -45px;
+    }
+    .inner__info-stock::before {
+        width: 25px;
+        height: 41px;
+        left: -35px;
+    }
+    .inner__info-title {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .inner__info-title span {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    .inner__info-subtitle {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .inner__info-test::before {
+        width: 22px;
+        height: 22px;
+        left: -40px;
+    }
+    .inner__info-test {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .model__info-btn {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+}
+
+@media (max-width: 370px) {
+    
+    .inner__info {
+        display: block;
+        width: 220px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    
+    .inner__info {
+        display: flex;
+    }
+    .inner__info-subtitle {
+        margin-bottom: 15px;
+    }
+    .info__block-speed {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .inner__info-speed::before {
+        left: 30px;
+    }
+    .info__block-test {
+        width: 205px;
+    }
+    .inner__info-stock::before {
+        left: 30px;
+    }
+
 }
