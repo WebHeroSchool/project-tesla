@@ -221,6 +221,7 @@ body {
     font-size: 13px;
     line-height: 16px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .tesla-btn {
@@ -298,11 +299,11 @@ body {
 @media (max-width: 880px) {
     
     .inner__info {
-        display: flex;
         flex-direction: column;
+        margin-left: 30px;
     }
     .info__block-speed {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
 }
@@ -367,8 +368,11 @@ body {
     .model__img {
         margin-bottom: 20px;
     }
+    .inner__info {
+        margin-left: 30px;
+    }
     .info__block-speed {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
     .inner__info-speed::before {
         width: 40px;
@@ -445,9 +449,14 @@ body {
 
 @media (max-width: 370px) {
     
-    .inner__info {
-        display: block;
-        width: 220px;
+    .model__info-btn {
+        margin-left: 20px;
+    }
+    .info__block-speed {
+        width: 250px;
+    }
+    .inner__info-test::before {
+        left: -30px;
     }
 
 }
@@ -463,16 +472,22 @@ body {
     .info__block-speed {
         display: block;
         text-align: center;
-        width: 100%;
+        margin-bottom: 25px;
     }
     .inner__info-speed::before {
-        left: 30px;
+        left: 45px;
     }
     .info__block-test {
-        width: 205px;
+        flex-direction: column;
+    }
+    .inner__info-test {
+        margin-bottom: 25px;
+    }
+    .model__info-btn {
+        margin-left: -25px;
     }
     .inner__info-stock::before {
-        left: 30px;
+        left: 50px;
     }
 
 }
