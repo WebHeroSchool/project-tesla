@@ -261,6 +261,126 @@ body {
     margin: 0 auto;
 }
 
+.top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #E51937;
+    background-image: url(../img/tesla-salon-top-section.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-title {
+    font-size: 70px;
+    line-height: 85px;
+    font-weight: 600;
+    color: #E51937;
+    margin: 40px 0 0 40px;
+}
+
+.inner__content {
+    max-width: 440px;
+    background-color: #E51937;
+    padding: 55px 45px;
+    color: #fff;
+}
+
+.content__title {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.content__description {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 55px;
+}
+
+.inner__info-top {
+    margin-bottom: 160px;
+    margin-left: 60px;
+}
+
+.inner__info-display,
+.inner__info-software {
+    margin-bottom: 45px;
+}
+
+.inner__info-display,
+.inner__info-software,
+.inner__info-capacity,
+.content__form {
+    position: relative;
+}
+
+.inner__info-display::before,
+.inner__info-software::before,
+.inner__info-capacity::before,
+.content__form::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner__info-display::before {
+    background-image: url(../img/top-inner-screen.png);
+    top: 10px;
+    left: -60px;
+    width: 36px;
+    height: 53px;
+}
+
+.inner__info-software::before {
+    background-image: url(../img/top-inner-wifi.png);
+    top: 20px;
+    left: -65px;
+    width: 44px;
+    height: 34px;
+}
+
+.inner__info-capacity::before {
+    background-image: url(../img/top-inner-bag.png);
+    top: 10px;
+    left: -60px;
+    width: 36px;
+    height: 52px;
+}
+
+.content__form::before {
+    background-image: url(../img/learn-more.png);
+    top: 10px;
+    left: -5px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.content__form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form__link {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.form__btn {
+    margin-left: 40px;
+}
+
+
+/* 1 section - adaptive */
 @media (max-width: 1230px) {
 
     .container {
@@ -488,6 +608,117 @@ body {
     }
     .inner__info-stock::before {
         left: 50px;
+    }
+
+}
+
+/* 2 section - adaptive */
+@media (max-width: 1024px) {
+
+    .top {
+        background-size: contain;
+    }
+    .top-title {
+        width: 100%;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .inner__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin-top: 550px;
+    }
+    .content__title {
+        margin-bottom: 30px;
+    }
+    .content__description {
+        width: 400px;
+    }
+    .content__form {
+        display: block;
+        margin: 0 auto;
+    }
+    .inner__info-top {
+        margin-bottom: 60px;
+    }
+    .inner__info-display, 
+    .inner__info-software {
+        margin-bottom: 25px;
+    }
+    .content__form::before {
+        left: -35px;
+    }
+
+}
+
+@media (max-width: 940px) {
+
+    .inner__info-top {
+        width:  250px;
+    }
+    .inner__info-display, 
+    .inner__info-software {
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width: 830px) {
+
+    .content__description {
+        width: 320px;
+    }
+    
+}
+
+@media (max-width: 940px) {
+
+    .content__description {
+        width: 300px;
+    }
+    .inner__info-top {
+        width: 205px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .inner__content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .form__link {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .content__form::before {
+        top: 0;
+    }
+    .form__btn {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .inner__content {
+        padding: 20px;
+    }
+    .inner__info-top {
+        display: none;
+    }
+    .content__form {
+        display: none;
     }
 
 }
