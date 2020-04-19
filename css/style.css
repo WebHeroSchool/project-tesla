@@ -45,7 +45,7 @@ body {
 
 /* header */
 .container {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -156,13 +156,13 @@ body {
 
 .inner__info-speed,
 .inner__info-stock,
-.inner__info-test {
+.inner__info-link {
     position: relative;
 }
 
 .inner__info-speed::before,
 .inner__info-stock::before,
-.inner__info-test::before {
+.inner__info-link::before {
     position: absolute;
     content: "";
     background-repeat: no-repeat;
@@ -186,7 +186,7 @@ body {
     height: 50px;
 }
 
-.inner__info-test::before {
+.inner__info-link::before {
     background-image: url(../img/test.png);
     top: 50%;
     left: -30px;
@@ -217,11 +217,14 @@ body {
     align-items: center;
 }
 
-.inner__info-test {
+.inner__info-link {
     font-size: 13px;
     line-height: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    margin-right: 30px;
 }
 
 .tesla-btn {
@@ -247,7 +250,6 @@ body {
     color: #E51937;
     border: 2px solid #E51937;
     background-color: #fff;
-    margin-left: 30px;
 }
 
 .model__info-btn:hover {
@@ -284,7 +286,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: 1px solid #E51937;
     background-image: url(../img/tesla-salon-top-section.png);
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -535,7 +536,7 @@ body {
     
     .inner__info {
         flex-direction: column;
-        margin-left: 30px;
+        padding-left: 30px;
     }
     .info__block-speed {
         margin-bottom: 30px;
@@ -556,13 +557,13 @@ body {
         width: 35px;
         height: 55px;
     }
-    .inner__info-test {
+    .inner__info-link {
         font-size: 16px;
         color: #E51937;
         line-height: 20px;
         font-weight: bold;
     }
-    .inner__info-test::before {
+    .inner__info-link::before {
         background-image: url(../img/test-2.png);
         width: 30px;
         height: 30px;
@@ -603,9 +604,6 @@ body {
     .model__img {
         margin-bottom: 20px;
     }
-    .inner__info {
-        margin-left: 30px;
-    }
     .info__block-speed {
         margin-bottom: 40px;
     }
@@ -625,9 +623,6 @@ body {
         font-size: 30px;
         line-height: 38px;
     }
-    .model__info-btn {
-        margin-left: 45px;
-    }
 
 }
 
@@ -642,7 +637,7 @@ body {
         line-height: 12px;
     }
     .info__block-speed {
-        width: 280px;
+        justify-content: space-around;
     }
     .inner__info-speed::before {
         width: 38px;
@@ -666,12 +661,12 @@ body {
         font-size: 10px;
         line-height: 12px;
     }
-    .inner__info-test::before {
+    .inner__info-link::before {
         width: 22px;
         height: 22px;
         left: -40px;
     }
-    .inner__info-test {
+    .inner__info-link {
         font-size: 13px;
         line-height: 16px;
     }
@@ -684,13 +679,7 @@ body {
 
 @media (max-width: 370px) {
     
-    .model__info-btn {
-        margin-left: 20px;
-    }
-    .info__block-speed {
-        width: 250px;
-    }
-    .inner__info-test::before {
+    .inner__info-link::before {
         left: -30px;
     }
 
@@ -701,6 +690,9 @@ body {
     .info__block-speed {
         padding: 0 15px;
         margin-bottom: 25px;
+    }
+    .inner__info-link {
+        margin-right: 20px;
     }
 
 }
@@ -718,20 +710,18 @@ body {
         text-align: center;
         margin-bottom: 25px;
     }
-    .inner__info-speed::before {
-        left: 30px;
+    .inner__info-speed::before,
+    .inner__info-stock::before {
+        left: 60px;
     }
     .info__block-test {
         flex-direction: column;
     }
-    .inner__info-test {
+    .inner__info-link {
         margin-bottom: 25px;
     }
     .model__info-btn {
         margin-left: -25px;
-    }
-    .inner__info-stock::before {
-        left: 40px;
     }
 
 }
